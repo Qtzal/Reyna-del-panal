@@ -1,0 +1,113 @@
+body {
+    /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+     color: rgb(236, 120, 11);
+     font-size: 1.2rem; /*tamaño de las letras*/
+     /*line-height: 1.6em; /* interlineado */
+     /*margin: 0;
+     width: 100%;
+     height: 100%;
+     letter-spacing: 0.03em;*/
+         width: 100%;
+         height: 100%;
+         letter-spacing: 0.02em;
+         line-height: 1.6;
+         font-family: 'Open Sans', sans-serif;
+         margin: 0;
+         
+   }
+   .header {
+    background: #776c04;
+    color: white;  
+    /* hacer el menu fijo */
+    /* position: fixed;*/
+    left: 0;
+    top: 0;
+    /* ocuapamos todo el ancho */
+    right: 0;
+    padding: 15px;
+  }
+    .header a {
+    color: white;
+    text-decoration: none;
+  }
+    .logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    /* lo alineamos al centro */
+    align-items: center;
+  
+    flex-wrap: wrap;
+  }
+  
+  /* logo */
+  .logo {
+    width: 200px;
+    margin-left: 15px;
+    padding: 0 20;
+  }
+  .menu-icon {
+    display: none;
+  }
+  /* todos los "ul" que esten dentro de "navigation" */
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navigation ul li {
+    /* uno al lado del otro */
+    display: inline-block;
+  }
+  /* los enlaces dentro del menu */
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+  }
+  .navigation ul li a:hover {
+    background: #cc4444;
+  }
+/*PRODUCTOS*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    /*height: 438px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .container .card{
+      width: 250px;
+      height: 455px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 20px;
+      text-align: center;
+      transition: all 0.25s;
+  }
+  .container .card:hover{
+      transform: translate(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  .container .card img {
+      width: 330px;
+      height: 220px;
+  }
+  .container .card h3 {
+      font-weight: 600;
+
+  }
+  .container .card p {
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300;
+  }
+  .container .card a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #3498db;
+  }
